@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+tex-diff-web/node_modules/
+
+# Web App Uploads & Results
+tex-diff-web/uploads/
+tex-diff-web/dist/
+
+# LaTeX Temporary Files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.nav
+*.snm
+
+# Generated Results
+diff.tex
+tex-diff-web/uploads/*/diff.tex
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
