@@ -15,19 +15,19 @@ Perfect for quick comparisons if you have Perl and `latexdiff` already configure
 ### Option 2: Web Application (The "Modern Way")
 A premium, multi-file compatible interface that handles project isolation and dependencies automatically.
 - **Directory**: `tex-diff-web/`
-- **Features**: Drag-and-drop, project-wide diffing (via `--flatten`), and automated environment detection.
+- **Features**: Drag-and-drop, project-wide diffing (via `--flatten`), and modular frontend/backend architecture.
 - **Quick Start**:
   ```bash
   cd tex-diff-web
-  npm install
-  npm start
+  npm run install-all   # Installs dependencies for both frontend and backend
+  npm run dev           # Runs both frontend and backend concurrently
   ```
 - **Documentation**: See [tex-diff-web/README.md](tex-diff-web/README.md).
 
 ## 📂 Repository Structure
 
 - `old/` & `new/`: Directories for your manual workflow versions.
-- `tex-diff-web/`: The React/Express web application source.
+- `tex-diff-web/`: The modular web application (React frontend & Express backend).
 - `latexdiff`: The core Perl diffing engine.
 - `Algorithm/`: Required Perl dependencies for `latexdiff`.
 - `LATEX_DIFF_GUIDE.md`: Detailed manual diffing instructions.
